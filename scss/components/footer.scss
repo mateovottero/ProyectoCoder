@@ -1,0 +1,26 @@
+// estilos del footer
+.footer_index{
+    background-color: black;
+    color: #FFF;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .section-footer{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5%;
+        .footeruno, .footerdos, .footertres, .footercuatro{
+            text-align: center;
+        }
+        .footercuatro a{
+            color: #FFF;
+            text-decoration: none;
+          }
+          .footercuatro ul{
+            list-style-type: none;
+            .redes li{
+                list-style-type: none;
+                color: #FFF;
+              }
+          }
+    }
+}

@@ -1,0 +1,18 @@
+// base
+@import './base/variables';
+@import './base/list';
+@import './base/maps';
+@import './base/colores';
+@import './base/extends';
+@import './base/operadores';
+@import './base/mixin';
+
+// components
+@import './components/oldstyle.scss';
+@import './components/mainindex.scss';
+@import './components/form.scss';
+@import './components/float.scss';
+@import './components/nav.scss';
+@import './components/footer.scss';
+@import './components/mainporquenosotros.scss';
+@import './components/mainfinanciacion.scss'

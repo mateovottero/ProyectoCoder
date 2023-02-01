@@ -1,0 +1,48 @@
+.parallax {
+    background-image: url(../img/parallaximagen.webp);
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    .tituloparallax {
+        text-align: center;
+        color: rgb(230, 211, 109);
+        font-family: "PT Sans", sans-serif;
+        font-weight: 600;
+    }
+  }
+.principalindex{
+    .titulodestacadasindex {
+        display: flex;
+        justify-content: center;
+        font-weight: 900;
+        font-size: xx-large;
+    }
+    .flexindex {
+        display: flex;
+        justify-content: space-between;
+        margin: 4%;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    .flexindex {
+      flex-direction: column;
+      margin: 3%;
+      gap: 20px;
+    }
+    .card {
+      width: 100%;
+    }
+    .flexstock {
+      flex-direction: column;
+      margin: 3%;
+      gap: 20px;
+    }
+  }
+  h1{
+    text-align: center;
+    padding: 1%;
+}

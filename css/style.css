@@ -1,0 +1,360 @@
+.formulario div .botoncontacto, .botoncontacto {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: rgb(230, 211, 109);
+  border-color: rgb(255, 255, 255);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 35px;
+}
+
+* {
+  Margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  min-height: 100%;
+  background-color: rgb(255, 255, 255);
+  font-family: "PT Sans", sans-serif;
+}
+
+html {
+  min-height: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.encabezado {
+  background-color: #030303;
+  padding-bottom: 2%;
+}
+
+.destacadas {
+  display: grid;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.card {
+  width: 30%;
+}
+
+.negrita {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.flexstock {
+  display: flex;
+  justify-content: space-between;
+  margin: 4%;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.redes {
+  list-style: none;
+  text-decoration: none;
+}
+
+.redes li a {
+  text-decoration: none;
+  color: rgb(230, 211, 109);
+}
+
+.parallax {
+  background-image: url(../img/parallaximagen.webp);
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+.parallax .tituloparallax {
+  text-align: center;
+  color: rgb(230, 211, 109);
+  font-family: "PT Sans", sans-serif;
+  font-weight: 600;
+}
+
+.principalindex .titulodestacadasindex {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: xx-large;
+}
+.principalindex .flexindex {
+  display: flex;
+  justify-content: space-between;
+  margin: 4%;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .flexindex {
+    flex-direction: column;
+    margin: 3%;
+    gap: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+  .flexstock {
+    flex-direction: column;
+    margin: 3%;
+    gap: 20px;
+  }
+}
+h1 {
+  text-align: center;
+  padding: 1%;
+}
+
+.formulario {
+  display: inline-block;
+  width: 30%;
+}
+.formulario ul {
+  margin: 1%;
+  padding: 1%;
+}
+.formulario div {
+  padding: 2%;
+}
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: rgb(230, 211, 109);
+  color: #000000;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float:hover {
+  text-decoration: none;
+  color: rgb(230, 211, 109);
+  background-color: #fff;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+.nav {
+  width: 100%;
+  background-color: #000000;
+  position: relative;
+}
+.nav .nav-header {
+  display: inline;
+}
+.nav .nav-header .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: rgb(230, 211, 109);
+  padding: 10px 10px 10px 10px;
+}
+.nav .nav-btn {
+  display: none;
+}
+.nav .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  text-decoration: none;
+}
+.nav .nav-links a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: rgb(230, 211, 109);
+}
+.nav .nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.nav #nav-check {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid rgb(230, 211, 109);
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+.footer_index {
+  background-color: black;
+  color: #FFF;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.footer_index .section-footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+.footer_index .section-footer .footeruno, .footer_index .section-footer .footerdos, .footer_index .section-footer .footertres, .footer_index .section-footer .footercuatro {
+  text-align: center;
+}
+.footer_index .section-footer .footercuatro a {
+  color: #FFF;
+  text-decoration: none;
+}
+.footer_index .section-footer .footercuatro ul {
+  list-style-type: none;
+}
+.footer_index .section-footer .footercuatro ul .redes li {
+  list-style-type: none;
+  color: #FFF;
+}
+
+main article {
+  margin: 1% 10% 1% 10%;
+}
+main article .historia {
+  text-align: center;
+}
+main article .integrantes {
+  margin: 3% 0% 3% 0%;
+}
+main article .integrantes li {
+  text-align: center;
+  list-style: none;
+}
+main .flexpqnosotros {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 0% 3% 0%;
+}
+main .flexpqnosotros .shield {
+  display: flex;
+  justify-content: center;
+}
+main .flexpqnosotros i {
+  font-size: 3cm;
+}
+main .flexpqnosotros h3 {
+  font-size: medium;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  main .flexpqnosotros {
+    flex-direction: column;
+    margin: 3%;
+    gap: 20px;
+  }
+}
+
+main .sectionfinanciacion {
+  text-align: center;
+  margin: 5%;
+}
+main .sectionfinanciacion .flexfinanciacion {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  gap: 20px;
+  justify-content: space-between;
+}
+main .sectionfinanciacion .flexfinanciacion .card2 {
+  width: 30%;
+  font-weight: 600;
+}
+main .sectionfinanciacion .sectionfinanciacion hr {
+  height: 5px;
+  opacity: inherit;
+}
+main article {
+  text-align: center;
+  margin: 3% 3% 3% 3%;
+}
+main article h3 {
+  font-size: larger;
+  font-weight: 600;
+  margin: 3% 3% 3% 3%;
+}
+main article .decredito {
+  list-style: none;
+  text-decoration: none;
+  font-size: x-large;
+  text-decoration: none;
+  font-weight: 600;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: rgb(230, 211, 109);
+  border-color: rgb(255, 255, 255);
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 35px;
+}
+
+@media (max-width: 600px) {
+  .flexfinanciacion {
+    flex-direction: column;
+    margin: 3%;
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

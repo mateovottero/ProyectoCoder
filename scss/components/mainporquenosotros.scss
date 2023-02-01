@@ -1,0 +1,41 @@
+main{
+    article{
+        margin: 1% 10% 1% 10%;
+
+        .historia{
+            text-align: center;
+        }
+        .integrantes {
+            margin: 3% 0% 3% 0%;
+            li{
+            text-align: center;
+            list-style: none;
+        }
+        }
+
+    }
+    .flexpqnosotros{
+        display: flex;
+        justify-content: space-between;
+        margin: 3% 0% 3% 0%;
+        .shield{
+            display: flex;
+            justify-content: center;
+            }
+            i{
+            font-size: 3cm;
+            }
+            h3{
+                font-size: medium;
+                font-weight: 600;
+            }
+    }
+    @media (max-width: 600px) {
+        .flexpqnosotros {
+        flex-direction: column;
+        margin: 3%;
+        gap: 20px;
+        }
+    }
+}
+

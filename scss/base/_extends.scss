@@ -1,0 +1,20 @@
+%boton{
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color: $color-terciario;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:3%;
+    padding-right:3%;
+    background-color:$color-principal;
+    border-color: $blanco;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:35px;
+    }
+
+
+.botoncontacto{
+    @extend %boton
+}

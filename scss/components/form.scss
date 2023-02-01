@@ -1,0 +1,15 @@
+.formulario {
+    display: inline-block;
+    width: 30%;
+    ul{
+        margin: 1%;
+        padding: 1%;
+    }
+    div{
+        padding: 2%;
+        .botoncontacto{
+            @extend %boton
+        }
+    }
+}
+  
