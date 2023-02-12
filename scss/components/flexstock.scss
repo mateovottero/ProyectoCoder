@@ -1,0 +1,25 @@
+.flexstock{
+    display: flex;
+    justify-content: space-between;
+    margin: 4%;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+.negrita{
+    font-size: larger;
+    font-weight: 600;
+}
+.card{
+    width: 30%;
+  }
+  @media (max-width: 600px){
+  .flexstock {
+    flex-direction: column;
+    margin: 3%;
+    gap: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+}

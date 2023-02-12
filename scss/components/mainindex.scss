@@ -21,10 +21,10 @@
         font-size: xx-large;
     }
     .flexindex {
-        display: flex;
-        justify-content: space-between;
-        margin: 4%;
-        text-align: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 4%;
+      text-align: center;
     }
 }
 @media (max-width: 600px) {
@@ -32,17 +32,17 @@
       flex-direction: column;
       margin: 3%;
       gap: 20px;
+      .card {
+        width: 100%;
+      }
     }
-    .card {
-      width: 100%;
-    }
-    .flexstock {
-      flex-direction: column;
-      margin: 3%;
-      gap: 20px;
-    }
-  }
   h1{
     text-align: center;
     padding: 1%;
+  }
+}
+.destacadas{
+  display: grid;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }

@@ -14,67 +14,6 @@
   border-radius: 35px;
 }
 
-* {
-  Margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0%;
-  min-height: 100%;
-  background-color: rgb(255, 255, 255);
-  font-family: "PT Sans", sans-serif;
-}
-
-html {
-  min-height: 100%;
-}
-
-h2 {
-  text-align: center;
-  font-size: xx-large;
-}
-
-.encabezado {
-  background-color: #030303;
-  padding-bottom: 2%;
-}
-
-.destacadas {
-  display: grid;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.card {
-  width: 30%;
-}
-
-.negrita {
-  font-size: larger;
-  font-weight: 600;
-}
-
-.flexstock {
-  display: flex;
-  justify-content: space-between;
-  margin: 4%;
-  text-align: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.redes {
-  list-style: none;
-  text-decoration: none;
-}
-
-.redes li a {
-  text-decoration: none;
-  color: rgb(230, 211, 109);
-}
-
 .parallax {
   background-image: url(../img/parallaximagen.webp);
   height: 700px;
@@ -110,18 +49,18 @@ h2 {
     margin: 3%;
     gap: 20px;
   }
-  .card {
+  .flexindex .card {
     width: 100%;
   }
-  .flexstock {
-    flex-direction: column;
-    margin: 3%;
-    gap: 20px;
+  h1 {
+    text-align: center;
+    padding: 1%;
   }
 }
-h1 {
-  text-align: center;
-  padding: 1%;
+.destacadas {
+  display: grid;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .formulario {
@@ -222,12 +161,13 @@ h1 {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     top: 50px;
     left: 0px;
+    z-index: 100;
   }
   .nav > .nav-links > a {
     display: block;
@@ -355,6 +295,60 @@ main article .decredito {
     margin: 3%;
     gap: 20px;
   }
+}
+.redes {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1%;
+}
+.redes li a {
+  text-decoration: none;
+  color: rgb(230, 211, 109);
+}
+
+.flexstock {
+  display: flex;
+  justify-content: space-between;
+  margin: 4%;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.negrita {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.card {
+  width: 30%;
+}
+
+@media (max-width: 600px) {
+  .flexstock {
+    flex-direction: column;
+    margin: 3%;
+    gap: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+body {
+  margin: 0%;
+  min-height: 100%;
+  background-color: rgb(255, 255, 255);
+  font-family: "PT Sans", sans-serif;
+}
+
+html {
+  min-height: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: xx-large;
 }
 
 /*# sourceMappingURL=style.css.map */
